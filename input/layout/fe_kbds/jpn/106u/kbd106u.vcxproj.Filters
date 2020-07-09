@@ -3,32 +3,32 @@
   <ItemGroup>
     <Filter Include="Source Files">
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;*</Extensions>
-      <UniqueIdentifier>{04250DA4-9C11-47C6-ADB5-D51AFB576121}</UniqueIdentifier>
+      <UniqueIdentifier>{C09BABDD-1513-408C-910D-A914FF59E167}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-      <UniqueIdentifier>{44BD7566-A35B-46E2-8C7A-C5DB8E778A25}</UniqueIdentifier>
+      <UniqueIdentifier>{0260B346-91B0-4102-9FB5-C45CD6349580}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms;man;xml</Extensions>
-      <UniqueIdentifier>{6E6580AB-01C6-4F48-A3DA-B2802C85EC4F}</UniqueIdentifier>
+      <UniqueIdentifier>{F0BC7E56-491F-4C93-8C11-0DE7CE6812D6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kbdgr.c">
+    <ClCompile Include="kbd106u.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <None Include="kbdgr.def">
+    <None Include="kbd106u.def">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="kbdgr.rc">
+    <ResourceCompile Include="kbd106u.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="kbdgr.h">
+    <ClInclude Include="kbd106u.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

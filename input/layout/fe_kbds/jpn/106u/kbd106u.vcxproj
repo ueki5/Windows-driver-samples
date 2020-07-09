@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8CC545F3-0678-4AC8-8A25-2110DB6BF1BD}</ProjectGuid>
+    <ProjectGuid>{07365E50-1324-40D2-832B-62DE0747FE4E}</ProjectGuid>
     <RootNamespace>$(MSBuildProjectName)</RootNamespace>
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
     <Platform Condition="'$(Platform)' == ''">Win32</Platform>
-    <SampleGuid>{051CA44C-EEB6-4936-84E5-972987B6EBE3}</SampleGuid>
+    <SampleGuid>{609BEE41-57F5-434E-98AB-81332C8D8BD0}</SampleGuid>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -75,19 +75,19 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
   <ItemGroup Label="WrappedTaskItems">
-    <ClInclude Include="kbdfr.h" />
+    <ClInclude Include="kbd106u.h" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <TargetName>kbdfr</TargetName>
+    <TargetName>kbd106u</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>kbdfr</TargetName>
+    <TargetName>kbd106u</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <TargetName>kbdfr</TargetName>
+    <TargetName>kbd106u</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <TargetName>kbdfr</TargetName>
+    <TargetName>kbd106u</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ResourceCompile>
@@ -161,49 +161,115 @@
     <Link>
       <AdditionalOptions>%(AdditionalOptions) -merge:.edata=.data -merge:.rdata=.data -merge:.text=.data -merge:.bss=.data -section:.data,re</AdditionalOptions>
       <AdditionalOptions>%(AdditionalOptions)  /ignore:4254</AdditionalOptions>
-      <ModuleDefinitionFile>kbdfr.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>kbd106u.def</ModuleDefinitionFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Link>
       <AdditionalOptions>%(AdditionalOptions) -merge:.edata=.data -merge:.rdata=.data -merge:.text=.data -merge:.bss=.data -section:.data,re</AdditionalOptions>
       <AdditionalOptions>%(AdditionalOptions)  /ignore:4254</AdditionalOptions>
-      <ModuleDefinitionFile>kbdfr.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>kbd106u.def</ModuleDefinitionFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Link>
       <AdditionalOptions>%(AdditionalOptions) -merge:.edata=.data -merge:.rdata=.data -merge:.text=.data -merge:.bss=.data -section:.data,re</AdditionalOptions>
       <AdditionalOptions>%(AdditionalOptions)  /ignore:4254</AdditionalOptions>
-      <ModuleDefinitionFile>kbdfr.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>kbd106u.def</ModuleDefinitionFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Link>
       <AdditionalOptions>%(AdditionalOptions) -merge:.edata=.data -merge:.rdata=.data -merge:.text=.data -merge:.bss=.data -section:.data,re</AdditionalOptions>
       <AdditionalOptions>%(AdditionalOptions)  /ignore:4254</AdditionalOptions>
-      <ModuleDefinitionFile>kbdfr.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>kbd106u.def</ModuleDefinitionFile>
+      <NoEntryPoint>true</NoEntryPoint>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
     </Link>
     <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>
       </ExceptionHandling>
+      <ControlFlowGuard>false</ControlFlowGuard>
     </ClCompile>
+    <Midl>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);FE_SB;FE_IME</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);JAPAN</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\inc</AdditionalIncludeDirectories>
+    </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="kbdfr.c" />
-    <ResourceCompile Include="kbdfr.rc" />
+    <ClCompile Include="kbd106u.c" />
+    <ResourceCompile Include="kbd106u.rc" />
   </ItemGroup>
   <ItemGroup>
     <Inf Exclude="@(Inf)" Include="*.inf" />
@@ -212,7 +278,7 @@
   <ItemGroup>
     <None Exclude="@(None)" Include="*.txt;*.htm;*.html" />
     <None Exclude="@(None)" Include="*.ico;*.cur;*.bmp;*.dlg;*.rct;*.gif;*.jpg;*.jpeg;*.wav;*.jpe;*.tiff;*.tif;*.png;*.rc2" />
-    <None Include="kbdfr.def" />
+    <None Include="kbd106u.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
