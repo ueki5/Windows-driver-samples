@@ -1,4 +1,4 @@
-LIBRARY kbd106u
+LIBRARY kbd101j
 
 EXPORTS
     KbdLayerDescriptor @1

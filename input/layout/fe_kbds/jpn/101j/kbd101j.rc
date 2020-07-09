@@ -33,9 +33,9 @@ BEGIN
             VALUE "CompanyName", "Windows (R) Win 7 DDK provider"
             VALUE "FileDescription", "JP Japanese Keyboard Layout for 106-us"
             VALUE "FileVersion", "10.0.10011.16384"
-            VALUE "InternalName", "kbd106u"
+            VALUE "InternalName", "kbd101j"
             VALUE "LegalCopyright", "c Microsoft Corporation. All rights reserved."
-            VALUE "OriginalFilename", "kbd106u.dll"
+            VALUE "OriginalFilename", "kbd101j.dll"
             VALUE "ProductName", "Windows (R) Win 7 DDK driver"
             VALUE "ProductVersion", "10.0.10011.16384"
         END

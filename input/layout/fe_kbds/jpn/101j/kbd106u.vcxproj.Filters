@@ -15,21 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="kbd106u.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <None Include="kbd106u.def">
-      <Filter>Source Files</Filter>
-    </None>
+    <ClInclude Include="kbd101j.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="kbd106u.rc">
+    <ResourceCompile Include="kbd101j.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="kbd106u.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="kbd101j.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="kbd101j.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

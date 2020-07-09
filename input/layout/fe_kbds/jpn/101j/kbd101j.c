@@ -1,5 +1,5 @@
 /***************************************************************************\
-* Module Name: kbd106u.c
+* Module Name: kbd101j.c
 *
 * Copyright (c) 1985-2000, Microsoft Corporation
 *
@@ -8,7 +8,7 @@
 
 #include <windows.h>
 #include "kbdjpn.h"
-#include "kbd106u.h"
+#include "kbd101j.h"
 
 #if defined(_M_IA64)
 #pragma section(".data")

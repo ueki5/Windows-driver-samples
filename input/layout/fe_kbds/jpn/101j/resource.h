@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ で生成されたインクルード ファイル。
-// kbd106u.rc で使用
+// kbd101j.rc で使用
 //
 #define SW_HIDE                         0
 #define HIDE_WINDOW                     0
