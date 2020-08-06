@@ -47,18 +47,9 @@
     </ClInclude>
     <ClInclude Include="bkprps.h" />
     <ClInclude Include="bksax.h" />
-    <ClInclude Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="*.def;*.bat;*.hpj;*.asmx">
+    <None Include="xdbook.def">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

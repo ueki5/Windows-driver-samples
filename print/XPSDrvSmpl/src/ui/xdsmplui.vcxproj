@@ -136,7 +136,29 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
   </ImportGroup>
-  <ItemGroup Label="WrappedTaskItems" />
+  <ItemGroup Label="WrappedTaskItems">
+    <ClInclude Include="bkdmptcnv.h" />
+    <ClInclude Include="colctrls.h" />
+    <ClInclude Include="coldmptcnv.h" />
+    <ClInclude Include="colppg.h" />
+    <ClInclude Include="devmode.h" />
+    <ClInclude Include="docppg.h" />
+    <ClInclude Include="ftrctrls.h" />
+    <ClInclude Include="ftrdmptcnv.h" />
+    <ClInclude Include="ftrppg.h" />
+    <ClInclude Include="nupptcnv.h" />
+    <ClInclude Include="pgscdmptcnv.h" />
+    <ClInclude Include="precomp.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="uictrl.h" />
+    <ClInclude Include="uiproperties.h" />
+    <ClInclude Include="wmctrls.h" />
+    <ClInclude Include="wmdmptcnv.h" />
+    <ClInclude Include="wmppg.h" />
+    <ClInclude Include="xdsmplcf.h" />
+    <ClInclude Include="xdsmplptprov.h" />
+    <ClInclude Include="xdsmplui.h" />
+  </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Link>
       <EntryPointSymbol Condition="'$(Platform)'=='win32'">_DllMainCRTStartup@12</EntryPointSymbol>
@@ -300,6 +322,7 @@
     <Link>
       <AdditionalDependencies>%(AdditionalDependencies);kernel32.lib;user32.lib;winspool.lib;ole32.lib;oleaut32.lib;advapi32.lib;msxml6.lib;uuid.lib;Comdlg32.lib;.\..\debug\$(IntDir)\xdsdbg.lib;.\..\common\$(IntDir)\xdsmplcmn.lib</AdditionalDependencies>
       <ModuleDefinitionFile>xdsmplui.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\atlmfc\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -573,10 +596,7 @@
   <ItemGroup>
     <None Exclude="@(None)" Include="*.txt;*.htm;*.html" />
     <None Exclude="@(None)" Include="*.ico;*.cur;*.bmp;*.dlg;*.rct;*.gif;*.jpg;*.jpeg;*.wav;*.jpe;*.tiff;*.tif;*.png;*.rc2" />
-    <None Exclude="@(None)" Include="*.def;*.bat;*.hpj;*.asmx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Exclude="@(ClInclude)" Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd" />
+    <None Include="xdsmplui.def" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
